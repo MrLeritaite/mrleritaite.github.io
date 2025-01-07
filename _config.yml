@@ -16,7 +16,7 @@ timezone: Europe/Bucharest
 
 title: Moldovan Flavius Denis # the main title
 
-tagline: Machine Learning Engineer# it will display as the subtitle
+tagline: Machine Learning Engineer
 
 description: >- # used by seo meta and the atom feed
   Building AI Agents. Interested in quantization and making llm runs faster. Building a startup.
