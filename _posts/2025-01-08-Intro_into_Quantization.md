@@ -139,17 +139,19 @@ Quantization reduces precision to optimize performance. To convert a float32 num
     - Clamp to the int8 Range: Ensure the result stays between -128 and 127.
 
 $$
+\begin{equation}
 Example Transformation: float32 → int8
 \newline
 Suppose we have a floating-point number: x = 3.6
 \newline
-- Range: $(-10.0, 10.0)$
+- Range: (-10.0, 10.0)
 \newline
 - Scale: \frac{(10 - (-10))}{255} = 0.0784
 \newline
 - Zero-Point: 0
 \newline
 Using the formula q=round(\frac{3.6 - 0}{0.0784}​)=46
+\end{equation}
 $$
 
 So, the float32 value of 3.6 is approximately represented as int8 value 46.
