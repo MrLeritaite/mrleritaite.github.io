@@ -7,7 +7,7 @@ categories: [Quantization]
 tags: [intro-into-quantization]
 author: mrleritaite
 description: Short summary of the post.  
-media_subpath: _posts/media/
+media_subpath: assets/img/2025-01-08-Intro_into_Quantization/
 ---
 
 Quantization is like compressing a high-resolution image into a smaller file without losing significant visual quality. In computer science and machine learning, it’s a technique used to optimize models and data representation, transforming high-precision formats (e.g., float32) into lower-precision ones (e.g., int8).
@@ -96,7 +96,7 @@ In a 32-bit floating-point representation (IEEE 754 standard), the binary struct
 
     - It includes an implicit leading '1' (for normalized numbers) followed by a fractional binary part that determines the precision of the number.
 
-![img-description](_posts/media/float_representation.jpg)
+![img-description](float_representation.jpg)
 
 <center>https://media.geeksforgeeks.org/wp-content/uploads/Single-Precision-IEEE-754-Floating-Point-Standard.jpg
 </center>
