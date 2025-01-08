@@ -7,7 +7,7 @@ categories: [Quantization]
 tags: [intro-into-quantization]
 author: mrleritaite
 description: Short summary of the post.  
-media_subpath: assets/img/2025-01-08-Intro_into_Quantization/
+media_subpath: /assets/img/2025-01-08-Intro_into_Quantization/
 ---
 
 Quantization is like compressing a high-resolution image into a smaller file without losing significant visual quality. In computer science and machine learning, it’s a technique used to optimize models and data representation, transforming high-precision formats (e.g., float32) into lower-precision ones (e.g., int8).
