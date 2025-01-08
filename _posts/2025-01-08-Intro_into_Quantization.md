@@ -146,11 +146,11 @@ Suppose we have a floating-point number: x = 3.6
 
 - Range: $(-10.0, 10.0)$
 
-- Scale: $\frac{(10 - (-10))}{255} = 0.0784$
+- Scale: \frac{(10 - (-10))}{255} = 0.0784
 
 - Zero-Point: 0
 
-Using the formula $q=round(\frac{3.6 - 0}{0.0784}​)=46$
+Using the formula q=round(\frac{3.6 - 0}{0.0784}​)=46
 \end{equation}
 $$
 
