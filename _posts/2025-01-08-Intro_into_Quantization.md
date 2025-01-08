@@ -96,7 +96,7 @@ In a 32-bit floating-point representation (IEEE 754 standard), the binary struct
 
     - It includes an implicit leading '1' (for normalized numbers) followed by a fractional binary part that determines the precision of the number.
 
-![img-description](/_posts/media/float_representation.jpg)
+![img-description](_posts/media/float_representation.jpg)
 
 <center>https://media.geeksforgeeks.org/wp-content/uploads/Single-Precision-IEEE-754-Floating-Point-Standard.jpg
 </center>
