@@ -97,9 +97,8 @@ In a 32-bit floating-point representation (IEEE 754 standard), the binary struct
     - It includes an implicit leading '1' (for normalized numbers) followed by a fractional binary part that determines the precision of the number.
 
 ![img-description](float_representation.jpg)
-
-<center>https://media.geeksforgeeks.org/wp-content/uploads/Single-Precision-IEEE-754-Floating-Point-Standard.jpg
-</center>
+_https://media.geeksforgeeks.org/wp-content/uploads/Single-Precision-IEEE-754-Floating-Point-Standard.jpg
+_
 
 
 This format offers a broad range of values and high precision but is computationally expensive.
@@ -139,6 +138,8 @@ Quantization reduces precision to optimize performance. To convert a float32 num
 
     - Clamp to the int8 Range: Ensure the result stays between -128 and 127.
 
+$$
+\begin{equation}
 Example Transformation: float32 → int8
 
 Suppose we have a floating-point number: x = 3.6
@@ -150,6 +151,8 @@ Suppose we have a floating-point number: x = 3.6
 - Zero-Point: 0
 
 Using the formula $q=round(\frac{3.6 - 0}{0.0784}​)=46$
+\end{equation}
+$$
 
 So, the float32 value of 3.6 is approximately represented as int8 value 46.
 
