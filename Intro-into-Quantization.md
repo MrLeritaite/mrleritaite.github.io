@@ -2,7 +2,7 @@
 layout: page
 title: My New Page
 math: true
-date: YYYY-MM-DD HH:MM:SS +/-TTTT
+date: 2025-01-08
 categories: [Quantization]
 tags: [intro-into-quantization]
 author: mrleritaite
