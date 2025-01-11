@@ -18,13 +18,13 @@ This article is the first in a series where we’ll lay the groundwork for under
 
 In this introductory piece, we’ll cover:
 
-- What quantization is and why it matters.
+1. What quantization is and why it matters.
 
-- How floating-point and integer numbers are represented in memory.
+2. How numbers are stored in memory
 
-- The steps and types of quantization processes.
+3. The quantization process: float32 → int8
 
-- A practical example to tie everything together.
+4. A practical example to tie everything together.
 
 Let’s get started!
 
