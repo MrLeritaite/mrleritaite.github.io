@@ -108,10 +108,11 @@ In a 32-bit floating-point representation (IEEE 754 standard), the binary struct
 >The actual exponent is -22:
 >
 >$$Biased\space exponent=−22+127=105$$
+>
 >In binary, $105=01101001_{2}​.$
 >      - Mantissa (fraction):
 > The fractional part $1.01001110_{2}$ is stored without the leading 1 (hidden bit). Only the fractional part 01001110… is stored.
->3. Combine the parts
+> 3. Combine the parts
 >Final representation in binary:
 >$$00110100101001110000000000000000$$
 
