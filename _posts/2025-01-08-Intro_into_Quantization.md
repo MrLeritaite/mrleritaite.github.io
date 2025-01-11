@@ -2,11 +2,11 @@
 layout: page
 title: Intro into Quantization
 math: true
-date: 2025-01-08
+date: 2025-01-11
 categories: [Quantization]
 tags: [intro-into-quantization]
 author: mrleritaite
-description: Short summary of the post.  
+description: In this article, we’ll break down the fundamentals of quantization, explore its types, and provide a practical example to tie it all together—perfect for anyone looking to deploy models on smartphones, IoT devices, and other resource-constrained systems. 
 media_subpath: /assets/img/2025-01-08-Intro_into_Quantization/
 ---
 
@@ -23,8 +23,6 @@ In this introductory piece, we’ll cover:
 2. How numbers are stored in memory
 
 3. The quantization process: float32 → int8
-
-4. A practical example to tie everything together.
 
 Let’s get started!
 
@@ -98,6 +96,25 @@ In a 32-bit floating-point representation (IEEE 754 standard), the binary struct
 
 ![img-description](float_representation.jpg)
 
+> Example representing the number 0.000000324 in IEEE 754
+> 1. Convert the number to scientific notation
+> $$0.000000324=3.24×10^{-7}$$
+> In binary, this is:
+> $$3.24_{10}​→1.01001110_{2}​ (normalized\space to\space base\space 2)$$
+> 2. Break it into IEEE 754 components:
+>    - Sign bit:
+   The number is positive, so the sign bit is 0.
+>     - Exponent
+>IEEE 754 uses a biased exponent. For single precision:
+$$Bias = 127$$
+>The actual exponent is -22:
+$$Biased\space exponent=−22+127=105$$
+>In binary, $105=01101001_{2}​.$
+>      - Mantissa (fraction):
+> The fractional part $1.01001110_{2}$ is stored without the leading 1 (hidden bit). Only the fractional part 01001110… is stored.
+>3. Combine the parts
+>Final representation in binary:
+>$$00110100101001110000000000000000$$
 
 This format offers a broad range of values and high precision but is computationally expensive.
 
@@ -108,6 +125,8 @@ Integers are simpler to represent in memory than floating-point numbers. An int3
 - 1 Sign Bit: 0 for positive, 1 for negative.
 
 - 31 Data Bits: Represent the actual integer value in binary format.
+
+![img-description](image.jpg)
 
 Integers are computationally cheaper to process, making them ideal candidates for quantization.
 
@@ -152,22 +171,13 @@ Quantization reduces precision to optimize performance. To convert a float32 num
 
 This reduction in precision sacrifices minor accuracy but significantly boosts efficiency.
 
-Python code example and charts
+## 4. Conclusion
 
-6. Conclusion
+Quantization is a powerful technique that bridges the gap between high-performance machine learning models and the resource constraints of real-world devices. While this process involves trade-offs, such as slight accuracy loss, understanding and applying quantization effectively ensures these compromises are minimized.
 
-Quantization is a powerful bridge between high precision and computational efficiency. By converting float32 data to lower-precision formats like int8, we can significantly reduce memory usage and computational costs without heavily compromising accuracy.
+In this introductory article, we’ve laid the groundwork by exploring what quantization is, why it matters, and how it bridges the differences between floating-point and integer representations. We’ve also delved into the quantization process, providing a practical overview of the transformation from float32 to int8.
 
-In this introductory article, we’ve explored:
 
-1. What quantization is and why it matters.
-
-2. Differences between float32 and int32 representations.
-
-3. Steps and types of quantization processes.
-
-In the next article, we’ll dive deeper into inference quantization and post-training quantization, complete with advanced examples and performance analysis.
+In the next article, we’ll take a closer look at Post-Training Quantization (PTQ). We’ll explore what it is, understand its principles, and walk through coding it from scratch, complete with practical examples to solidify your understanding.
 
 Stay tuned—exciting experiments await!
-View draft history
-
