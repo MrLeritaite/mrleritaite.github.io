@@ -103,9 +103,8 @@ In a 32-bit floating-point representation (IEEE 754 standard), the binary struct
 > 2. Break it into IEEE 754 components:
 >    - Sign bit:
 >   The number is positive, so the sign bit is 0.
->     - Exponent
->IEEE 754 uses a biased exponent. For single precision: 
->$$Bias = 127$$.
+>     - Exponent:
+>   IEEE 754 uses a biased exponent. For single precision: $Bias = 127$.
 >The actual exponent is -22:
 >
 >$$Biased\space exponent=−22+127=105$$
