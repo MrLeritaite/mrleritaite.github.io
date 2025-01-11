@@ -104,9 +104,11 @@ In a 32-bit floating-point representation (IEEE 754 standard), the binary struct
 >    - Sign bit:
 >   The number is positive, so the sign bit is 0.
 >     - Exponent
->IEEE 754 uses a biased exponent. For single precision: $Bias = 127$.
+>IEEE 754 uses a biased exponent. For single precision: 
+>$$Bias = 127$$.
 >The actual exponent is -22:
-$$Biased\space exponent=−22+127=105$$
+>
+>$$Biased\space exponent=−22+127=105$$
 >In binary, $105=01101001_{2}​.$
 >      - Mantissa (fraction):
 > The fractional part $1.01001110_{2}$ is stored without the leading 1 (hidden bit). Only the fractional part 01001110… is stored.
