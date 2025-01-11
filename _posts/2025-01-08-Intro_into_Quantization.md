@@ -97,7 +97,7 @@ In a 32-bit floating-point representation (IEEE 754 standard), the binary struct
 ![img-description](float_representation.jpg)
 
 >Example representing the number 0.000000324 in IEEE 754
-> 1. Convert the number to scientific notation: $0.000000324=3.24×10^{-7}$
+> 1. Convert the number to scientific notation: $0.000000324=3.24×10^{-7}$.
 > In binary, this is:
 > $$3.24_{10}​→1.01001110_{2}​ (normalized\space to\space base\space 2)$$
 > 2. Break it into IEEE 754 components:
@@ -109,8 +109,8 @@ In a 32-bit floating-point representation (IEEE 754 standard), the binary struct
 >    - Mantissa (fraction):
 > The fractional part $1.01001110_{2}$ is stored without the leading 1 (hidden bit). Only the fractional part 01001110… is stored.
 > 3. Combine the parts
->Final representation in binary:
->$$00110100101001110000000000000000$$
+> Final representation in binary:
+> - $$00110100101001110000000000000000$$
 
 This format offers a broad range of values and high precision but is computationally expensive.
 
