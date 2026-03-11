@@ -23,16 +23,6 @@ search {
   @include bp.lg {
     max-width: v.$search-max-width;
   }
-
-  @include bp.xl {
-    margin-right: 4rem;
-  }
-
-  @include bp.xxxl {
-    margin-right: calc(
-      v.$main-content-max-width / 4 - v.$search-max-width - 0.75rem
-    );
-  }
 }
 
 #search-result-wrapper {

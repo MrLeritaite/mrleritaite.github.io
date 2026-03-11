@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: post
 title: Intro into Quantization
 math: true
+toc: true
 date: 2025-01-11
 categories: [Quantization]
 tags: [intro-into-quantization]

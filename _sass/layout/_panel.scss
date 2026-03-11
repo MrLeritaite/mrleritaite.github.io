@@ -6,11 +6,8 @@
   top: 2rem;
   transition: top 0.2s ease-in-out;
   margin-top: 3rem;
-
-  &:only-child {
-    position: -webkit-sticky;
-    position: sticky;
-  }
+  position: -webkit-sticky;
+  position: sticky;
 
   > section {
     @extend %panel-border;
